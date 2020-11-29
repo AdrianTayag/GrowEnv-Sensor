@@ -1,4 +1,5 @@
 //Sensor block
+//Coded for Arduino Micro 32u4
 
 //LCD
 #include <LiquidCrystal_I2C.h>
@@ -41,22 +42,10 @@ void setup() {
     lcd.begin();
     lcd.backlight();
     pinMode(button, INPUT);
-    if (! dht.begin()) {
-        lcd.print("No DHT-11 found.")
-        while (1);
-    }
-    if (! myLux.powerOn()) {
-        lcd.print("No GY-30 found.")
-        while (1);
-    }
-    else {
-        myLux.setContHighRes();  
-    }
-    
-    if (! tcs.begin()) {
-        lcd.print("No TCS34725 found.");
-        while (1);
-    } 
+    dht.begin();
+    myLux.powerOn();
+    myLux.setContHighRes();
+    tcs.begin();
     if (! rtc.begin()) {
         lcd.print("Couldn't find RTC");
         while (1);
@@ -167,10 +156,10 @@ void loop() {
         case 4: //GY-30
             float light = myLux.getLux();
             lcd.setCursor(0,0);
-            lcd.print("Light Intensity")
+            lcd.print("Light Intensity");
             lcd.setCursor(0,1);
             lcd.print(light, 1);
-            lcd.print(" lux")
+            lcd.print(" lux");
     }
     delay(1000);
     lcd.clear();
