@@ -1,6 +1,6 @@
 # GrowEnv-Sensor
 ### An Arduino based Growing Environment Sensor Module  
-#### Blogpost for more detailed discussion/thoughts
+#### [Blogpost for more detailed discussion/thoughts](https://adriantayag.github.io/diy/2020/12/01/Hacking-together-sensors-for-Gardening.html)
 
 Initially, an Arduino Micro clone was used for quickly verifying if the whole stack of modules work. To save cost, the code was then modified to run with a Digispark ATtiny85 (Soil Moisture and RGB Sensor is not yet working).  
 
