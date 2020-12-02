@@ -13,13 +13,13 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 //DHT-11
 #include "TinyDHT.h"
-#define DHTPIN 4  // DHT connected to Arduino Uno Digital Pin 2
+#define DHTPIN 3  // DHT connected to Arduino Uno Digital Pin 2
 #define DHTTYPE DHT11   // DHT 11 
 DHT dht(DHTPIN, DHTTYPE);
 
 //Soil Moisture
-const int AirValue = 585; //Manually determined
-const int WaterValue = 274;
+const int AirValue = 460; //Manually determined
+const int WaterValue = 450;
 int soilMoistureValue = 0;
 int soilmoisturepercent=0;
 
@@ -128,7 +128,7 @@ void loop() {
             {
             lcd.setCursor(0,0);
             lcd.print("Soil Moisture");
-            soilMoistureValue = analogRead(A3); //refer to as 3, not A3
+            soilMoistureValue = analogRead(A2); //refer to as 3, not A3
             soilmoisturepercent = map(soilMoistureValue, AirValue, WaterValue, 0, 100);
             lcd.setCursor(0,1);
             if(soilmoisturepercent >= 100) {
