@@ -14,21 +14,21 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20PU U?
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
 U 1 1 5FC370BB
 P 4600 2750
-F 0 "U?" H 4070 2796 50  0000 R CNN
-F 1 "Digispark ATtiny85 Board" H 4070 2705 50  0000 R CNN
+F 0 "U1" H 4750 3350 50  0000 R CNN
+F 1 "Digispark ATtiny85 Board" H 5600 3300 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 4600 2750 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4600 2750 50  0001 C CNN
 	1    4600 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J3
 U 1 1 5FC396B0
 P 8300 3400
-F 0 "J?" H 8380 3442 50  0000 L CNN
+F 0 "J3" H 8380 3442 50  0000 L CNN
 F 1 "BH1750 Light Sensor" H 8380 3351 50  0000 L CNN
 F 2 "" H 8300 3400 50  0001 C CNN
 F 3 "~" H 8300 3400 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" H 8300 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J1
 U 1 1 5FC3A403
 P 8250 1850
-F 0 "J?" H 8330 1892 50  0000 L CNN
+F 0 "J1" H 8330 1892 50  0000 L CNN
 F 1 "Soil Moisture Sensor V1.2" H 8330 1801 50  0000 L CNN
 F 2 "" H 8250 1850 50  0001 C CNN
 F 3 "~" H 8250 1850 50  0001 C CNN
@@ -47,10 +47,10 @@ F 3 "~" H 8250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x07 J?
+L Connector_Generic:Conn_01x07 J5
 U 1 1 5FC3B782
 P 8300 5050
-F 0 "J?" H 8380 5092 50  0000 L CNN
+F 0 "J5" H 8380 5092 50  0000 L CNN
 F 1 "TCS34725 RGB Sensor" H 8380 5001 50  0000 L CNN
 F 2 "" H 8300 5050 50  0001 C CNN
 F 3 "~" H 8300 5050 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" H 8300 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5FC3C02C
 P 8300 5750
-F 0 "J?" H 8380 5742 50  0000 L CNN
+F 0 "J6" H 8380 5742 50  0000 L CNN
 F 1 "16x2 LCD Display" H 8380 5651 50  0000 L CNN
 F 2 "" H 8300 5750 50  0001 C CNN
 F 3 "~" H 8300 5750 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "~" H 8300 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J2
 U 1 1 5FC3CAE1
 P 8250 2500
-F 0 "J?" H 8330 2542 50  0000 L CNN
+F 0 "J2" H 8330 2542 50  0000 L CNN
 F 1 "DHT11 Temp & Humidity Sensor" H 8330 2451 50  0000 L CNN
 F 2 "" H 8250 2500 50  0001 C CNN
 F 3 "~" H 8250 2500 50  0001 C CNN
@@ -116,10 +116,10 @@ Wire Wire Line
 Wire Wire Line
 	7800 3600 7800 4300
 $Comp
-L Connector_Generic:Conn_01x07 J?
+L Connector_Generic:Conn_01x07 J4
 U 1 1 5FC3AC26
 P 8300 4200
-F 0 "J?" H 8380 4242 50  0000 L CNN
+F 0 "J4" H 8380 4242 50  0000 L CNN
 F 1 "TinyRTC Clock Module" H 8380 4151 50  0000 L CNN
 F 2 "" H 8300 4200 50  0001 C CNN
 F 3 "~" H 8300 4200 50  0001 C CNN
@@ -223,7 +223,7 @@ L Switch:SW_MEC_5G SW1
 U 1 1 5FC5E577
 P 2850 2950
 F 0 "SW1" H 2850 3235 50  0000 C CNN
-F 1 "SW_MEC_5G" H 2850 3144 50  0000 C CNN
+F 1 "Toggle Switch" H 2850 3144 50  0000 C CNN
 F 2 "" H 2850 3150 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 2850 3150 50  0001 C CNN
 	1    2850 2950
@@ -233,19 +233,6 @@ Wire Wire Line
 	6200 3500 7100 3500
 Wire Wire Line
 	5200 2650 6200 2650
-$Comp
-L Device:R R?
-U 1 1 5FC946E1
-P 3350 3100
-F 0 "R?" H 3420 3146 50  0000 L CNN
-F 1 "R" H 3420 3055 50  0000 L CNN
-F 2 "" V 3280 3100 50  0001 C CNN
-F 3 "~" H 3350 3100 50  0001 C CNN
-	1    3350 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 2950 3250 3600
 Wire Wire Line
 	5400 2550 5200 2550
 Wire Wire Line
@@ -261,16 +248,7 @@ Connection ~ 4600 2050
 Wire Wire Line
 	4600 2050 4600 2150
 Wire Wire Line
-	3350 3250 3350 3500
-Wire Wire Line
-	3350 3500 4000 3500
-Connection ~ 3250 2950
-Wire Wire Line
-	3250 2950 3350 2950
-Wire Wire Line
-	3250 3600 5400 3600
-Wire Wire Line
-	3050 2950 3250 2950
+	3350 3250 3350 3350
 Text Notes 7350 7500 0    50   ~ 0
 General Wiring Diagram for GrowEnv-Sensor
 Text Notes 8100 7650 0    50   ~ 0
@@ -279,11 +257,31 @@ Text Notes 10600 7650 0    50   ~ 0
 1.0
 Text Notes 7000 7100 0    50   ~ 0
 Digispark ATtiny85 Development Board\nSoil Moisture Sensor V1.2\nDHT-11 Temp & Humidity Sensor\nBH1750 Light Intensity Sensor\nTinyRTC Clock Module\nTCS34725 RGB Sensor\n16x2 LCD Display Module
-Wire Wire Line
-	4000 3500 4000 3350
 Connection ~ 4000 3350
 Wire Wire Line
 	5400 2550 5400 3600
 Wire Wire Line
 	2550 2050 2550 2950
+Wire Wire Line
+	4000 3350 3350 3350
+Wire Wire Line
+	3150 3600 3150 2950
+Wire Wire Line
+	3150 3600 5400 3600
+Wire Wire Line
+	3050 2950 3150 2950
+Connection ~ 3150 2950
+Wire Wire Line
+	3150 2950 3350 2950
+$Comp
+L Device:R R1
+U 1 1 5FC946E1
+P 3350 3100
+F 0 "R1" H 3420 3146 50  0000 L CNN
+F 1 "Pulldown" H 3420 3055 50  0000 L CNN
+F 2 "" V 3280 3100 50  0001 C CNN
+F 3 "~" H 3350 3100 50  0001 C CNN
+	1    3350 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

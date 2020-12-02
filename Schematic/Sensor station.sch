@@ -211,13 +211,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 1950 7900 1950
 Wire Wire Line
-	6800 2750 6800 1750
-Wire Wire Line
-	6900 2850 6900 2500
-Wire Wire Line
 	6800 1750 8050 1750
-Wire Wire Line
-	5200 2750 6800 2750
 $Comp
 L Switch:SW_MEC_5G SW1
 U 1 1 5FC5E577
@@ -235,8 +229,6 @@ Wire Wire Line
 	5200 2650 6200 2650
 Wire Wire Line
 	5400 2550 5200 2550
-Wire Wire Line
-	5200 2850 6900 2850
 Wire Wire Line
 	2550 2050 4600 2050
 Wire Wire Line
@@ -284,4 +276,12 @@ F 3 "~" H 3350 3100 50  0001 C CNN
 	1    3350 3100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6800 2850 5200 2850
+Wire Wire Line
+	6800 1750 6800 2850
+Wire Wire Line
+	5200 2750 6900 2750
+Wire Wire Line
+	6900 2750 6900 2500
 $EndSCHEMATC
